@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 21em) and (max-width: 64em) {
+  .translate-y-col > :nth-child(even) {
+    transform: translateY(3rem);
+  }
+}
+@media (min-width: 64em) {
+  .translate-y-col > :nth-child(3n + 2) {
+    transform: translateY(6rem);
+  }
+}
